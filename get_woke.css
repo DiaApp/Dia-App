@@ -1,24 +1,25 @@
-.floatLeft {
+#floatLeft {
     float:left; 
-    width: 50%;
+    width: 45%;
     background-color: white;
     height: 300px;
     padding: 0px 30px;
 }
 
-.floatRight {
+#floatRight {
 float: right;
     background-color: white;
     height: 365px;
     width: 43%;
     padding: 14px 0px;
 }
-.bottomLeft {
+#bottomLeft {
     float: left;
         background-color: white;
         height: 300px;
-        width: 43%;
+        width: 45%;
         padding: 0px 30px;
+        
     }
     .container {
         width: 100%;
