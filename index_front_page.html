@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dia</title>
+
+    <script src="assets/javascript/frontpage.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/front_styles.css">
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  
 </head>
 <body>
-    <!-- Nav Bar -->
+    <!-- Nav Bar with logo image-->
     <!-- Center Block (Time, greeting message, 3 pages buttons) -->
     <!-- Open Ended Positive Array of Questions -->
+    <!-- Uses calming background w/ music -->
 
-    
+    <!-- The video -->
+
+    <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo">Dia-Logo</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn">Relax</a></li>
+                <li><a class="waves-effect waves-light btn">Woke<i class="material-icons right">cloud</i></a></li>
+                <li><a class="waves-effect waves-light btn-large">Productivity</a></li>
+              </ul>
+            </div>
+          </nav>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/images/Calm Water - HD Stock Footage Background Loop.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content">
+        <h1>Dia</h1>
+        <p>Rise and Shine...</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </body>
 </html>
