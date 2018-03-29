@@ -1,0 +1,30 @@
+.floatLeft {
+    float:left; 
+    width: 50%;
+    background-color: white;
+    height: 300px;
+    padding: 0px 30px;
+}
+
+.floatRight {
+float: right;
+    background-color: white;
+    height: 365px;
+    width: 43%;
+    padding: 14px 0px;
+}
+.bottomLeft {
+    float: left;
+        background-color: white;
+        height: 300px;
+        width: 43%;
+        padding: 0px 30px;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+
+        text-align: center;
+    }
