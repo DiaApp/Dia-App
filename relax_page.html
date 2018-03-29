@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Relax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="assets/javascript/app.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navbar -->
     <!-- search bar -->
+
+    <!--Top Bar-->
+    <nav class="navbar navbar-default navbar-fixed-top teal lighten-2">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-text">Dia</p>
+            </div>
+        </div>
+    </nav>
+    <!--Search Bar-->
+    <div class= "container" id="search">
+            <form id="form">
+                    <label for="Search"></label>
+                    <input type="text" value="" id="search-input">
+                    <input type="submit" id="submit-input">
+            </form>  
+    </div>
+    <div class="row">
+         <!--Giphy Api-->
+        <div class="col-s6" id="gifs">
+            Giphy API here
+        </div>
+    </div>
+    <div class="row">  
+        <!--YouTube Api-->
+        <div class="col-s6" id="youtube-videos">
+            Youtube API here
+        </div>
+    </div>
+   
+
     
 </body>
 </html>

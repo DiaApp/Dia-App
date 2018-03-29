@@ -34,3 +34,15 @@
     background: #ddd;
     color: black;
 }
+
+.navbar {
+    text-align: center;
+}
+
+#gifs {
+    float: right;
+}
+
+#videos {
+    float: left;
+}
