@@ -1,0 +1,11 @@
+.navbar {
+    text-align: center;
+}
+
+#gifs {
+    float: right;
+}
+
+#videos {
+    float: left;
+}
