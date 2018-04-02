@@ -1,3 +1,8 @@
+
+
+// JAVASCRIPT BELOW FOR GOALS TAB
+//-------------------------------------------------------------
+
 //firebase intitialization for productivity page
 var config = {
   apiKey: "AIzaSyBPmro-Lmwer67ByMa3D-64qu7U-CsbT5I",
@@ -73,10 +78,7 @@ $(document.body).on("click", ".checkbox", function () {
  
 
 })
-
-
-
-    //
+//-------------------------------------------------------------------------------------------------
 
 
 
