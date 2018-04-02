@@ -16,7 +16,7 @@ function myFunction() {
 }
 
 myFunction();
-
+//new clock
 //clock
 var currentTime;
 var currentDate;
