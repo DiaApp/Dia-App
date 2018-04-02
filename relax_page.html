@@ -6,46 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Relax</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <!--Material Icons-->
+    <!--Material Icons and Google Fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <!-- search bar -->
-
-    <!--Top Bar-->
-    <nav class="navbar navbar-default navbar-fixed-top teal lighten-2">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <p class="navbar-text">Dia</p>
-            </div>
+    <!--Background Video-->
+    <video autoplay muted loop id="myVideo">
+            <source src="assets/images/beachloop.mp4" type="video/mp4">
+          </video>
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper teal lighten-3">
+          <a href="#!" class="brand-logo">Dia</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="waves-effect waves-light btn teal lighten-2">Get Woke</a></li>
+            <li><a class="waves-effect waves-light btn teal lighten-2">Productivity</a></li>
+            <li><a class="waves-effect waves-light btn-large">Relax<i class="material-icons right">cloud</i></a></li>
+          </ul>
         </div>
-    </nav>
+      </nav>
     <!--Search Bar-->
     <div class= "container" id="search">
-            <form id="form">
-                    <label for="Search"></label>
-                    <input type="text" id="search-input">
-                    <input type="submit" id="submit-input">
-            </form>  
+        <form id="form">
+            <label for="Search"></label>
+            <input type="text" id="search-input">
+            <button class="btn-small waves-effect waves-light teal lighten-2" type="submit" name="action" id="submit-input">Submit
+            </button>
+        </form>  
     </div>
     <div class="row">
          <!--Giphy Api-->
         <div class="col-s6" id="gifs">
-            Giphy API here
+            <!--Giphy shows here-->
         </div>
-        <!--YouTube Api-->
+
         <div class="col-s6" id="youtube-videos">
-            Youtube API here
+            <!--Youtube shows here-->
         </div>
     </div>
+    <!--Footer-->
+    <footer class="page-footer teal lighten-3">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Copyright
+          </div>
+        </div>
+      </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=init"></script>
