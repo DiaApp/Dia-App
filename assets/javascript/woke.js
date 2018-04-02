@@ -51,7 +51,6 @@ function firstTopic() {
     });
 }
 firstTopic();
-
 function topHeadlines() {
     var url = 'https://newsapi.org/v2/top-headlines?' +
         'country=us&' +
@@ -61,5 +60,42 @@ function topHeadlines() {
         method: "GET",
     }).then(function (result) {
         console.log(result.articles[0]);
+        var results = result.articles;
+        for (var i = 0; i < 5; i++) {
+            console.log(results[i].title);
+            console.log(results[i].url);
+        
+            var webUrl = results[i].url;
+            var headline = results[i].title;
+            if ('author' in results[i]) { var byLine = results[i].author; }
+            var pubDate = results[i].publishedAt;
+
+            var articleDiv = $("<div>");
+
+            var number = $("<div>" + (i + 1) + "</div>");
+            articleDiv.append(number);
+
+            var title = $("<h1>");
+            title.text(headline);
+            articleDiv.append(title);
+
+            if ('author' in results[i]) {
+                var author = $("<p>");
+                author.text(byLine);
+                articleDiv.append(author);
+            }
+
+            var date = $("<p>");
+            date.text(pubDate);
+            articleDiv.append(date);
+
+            var link = $("<a>");
+            link.text(webUrl);
+            link.attr("href", webUrl);
+            articleDiv.append(link);
+
+            $("#trending").append(articleDiv);
+        }
     })
 }
+topHeadlines();
