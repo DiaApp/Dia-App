@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dia</title>
+  <title>Dia | HOME</title>
 
 
   <!-- Compiled and minified CSS -->
@@ -18,7 +18,8 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <link rel="icon" type="image/png" href="assets/images/Dia-favi.ico">
-
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  
 </head>
 
 <body>
@@ -32,7 +33,9 @@
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Dia-Logo</a>
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/Dia-logo1.png" alt="Dia Logo">
+      </a>
       <ul class="right hide-on-med-and-down">
         <li>
           <a href="relax_page.html" class="waves-effect waves-light btn">Relax</a>
@@ -51,22 +54,27 @@
   <div class="clock">
     <h1 id="time"></h1>
     <h2 id="date"></h2>
+    <h2 id="message">Welcome, 
+      <form>
+        <input type="text" placeholder="John Snow">
+        <input id="subBtn"type="submit">
+      </form>
+    </h2>
   </div>
+  
   <video autoplay muted loop id="myVideo">
         <source src="assets/images/Calm Water - HD Stock Footage Background Loop.mp4" type="video/mp4">
       </video>
       
       <!-- Optional: some overlay text to describe the video -->
   <div class="content">
-    <h1>Dia</h1>
-    <p>Rise and Shine...</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
     <button id="myBtn" onclick="myFunction()">Chill</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="assets/javascript/frontpage.js"></script>
+
 </body>
 
 </html>

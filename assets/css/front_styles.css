@@ -1,4 +1,9 @@
 /* Style the video: 100% width and height to cover the entire window */
+body, html {
+  min-height: 100vh;
+
+}
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -13,7 +18,7 @@
 .content {
     position: fixed;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     color: #e2e2e2;
     width: 100%;
     padding: 20px;
@@ -51,9 +56,27 @@
 }
 
 #time {
-    font-size: 110px;
+    font-size: 100px;
 }
 
 #date {
     font-size: 30px;
+}
+
+.brand-logo {
+  z-index: 7;
+}
+
+.brand-logo img {
+  width: 111px;
+  height: auto;
+}
+
+.welcome > h2 {
+  z-index: 100;
+  clear: both;
+}
+
+#subBtn {
+  display: none;
 }

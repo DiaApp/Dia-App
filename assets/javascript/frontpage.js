@@ -1,3 +1,16 @@
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyAEpQOWrA8NdAQDn_tAds4GdBVw0F7HKsQ",
+  authDomain: "dia-app-4218.firebaseapp.com",
+  databaseURL: "https://dia-app-4218.firebaseio.com",
+  projectId: "dia-app-4218",
+  storageBucket: "",
+  messagingSenderId: "292332669604"
+};
+firebase.initializeApp(config);
+
+var database = firebase.database();
+
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -22,7 +35,7 @@ var currentTime;
 var currentDate;
 function centerClock() {
     currentTime = moment().format("h:mm a");
-    currentDate = moment().format("MMMM Do YYYY");
+    currentDate = moment().format("MMMM Do, YYYY");
     $("#time").text(currentTime);
     $("#date").text(currentDate);
     console.log(currentTime);
@@ -30,9 +43,14 @@ function centerClock() {
     intervalId = setInterval(timeCurrent, 1000);
     function timeCurrent() {
         currentTime = moment().format("h:mm a");
-        currentDate = moment().format("MMMM Do YYYY");
+        currentDate = moment().format("MMMM Do, YYYY");
         $("#time").text(currentTime);
         $("#date").text(currentDate);
     };
 }
 centerClock();
+
+$("form").on("submit", function() {
+  event.preventDefault();
+  console.log("hi");
+}); 
