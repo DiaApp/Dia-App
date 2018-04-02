@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="productivity.css">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Productivity</title>
 
+
+    <link rel="icon" type="image/png" href="assets/images/Dia-favi.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/productivity.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
 </head>
+
 <body>
-        <nav class="navbar navbar-default navbar-fixed-top teal lighten-2">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <p class="navbar-text">Dia</p>
-                    </div>
-                </div>
-            </nav>
-    <br><br><br><br>
+    <nav class="navbar navbar-default navbar-fixed-top teal lighten-2">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-text">Dia</p>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="row">
-            <div id="floatLeft" class= "col-md-4">
+            <div id="goalsLeft" class="col-md-4">
 
-                <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <form>
+                    <span id="todo-item">Goals for Today:
+                        <input id="formGoal" type="text">
+                        <input id="add-goals" value="Add" type="submit">
+                    </span>
+                </form>
+                <div id="goals"></div>
                 <!-- This content will take up 4/12 (or 1/3) of the container -->
             </div>
-            
+
             <div id="floatRight" class="col-md-4">
                 <!-- This content will take up 4/12 (or 1/3) of the container -->
                 <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -60,13 +72,17 @@
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                     software like Aldus PageMaker including versions of Lorem Ipsum</p>
             </div>
-        
-    </div>
+
+        </div>
 
 
 
-    <!-- The 'Get Woke' page will contain both news content the user selects to receive and any updates they want. The
+        <!-- The 'Get Woke' page will contain both news content the user selects to receive and any updates they want. The
     API we can use would be NYT/Twitter/Sports/TechNews. It will have 3 divs within the container. Each div is 
 different  -->
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script src="assets/javascript/productivity.js"></script>
 </body>
+
 </html>
