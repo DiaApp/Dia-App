@@ -1,29 +1,40 @@
-#floatLeft {
-    float:left; 
-    width: 45%;
-    background-color: white;
-    height: auto;
-    padding: 0px 30px;
-    overflow: auto;
-}
+body, html {
+    min-height: 100vh;
+    font-family: 'Fira Sans', sans-serif,;
+  
+  }
 
-#floatRight {
-float: right;
+#floatLeft {
+    clear: both;
+    float:left; 
+    width: 40%;
     background-color: white;
     height: auto;
-    width: 43%;
     padding: 0px 0px;
     overflow: auto;
 }
 
-    .container {
-        width: 100%;
-    }
+#floatRight {
+    float: right;
+    background-color: white;
+    height: auto;
+    width: 40%;
+    padding: 0px 0px;
+    overflow: auto;
+}
 
-    .navbar {
+.brand-logo img {
+    width: 111px;
+    height: auto;
+}
 
-        text-align: center;
-    }
-    .hide {
-        display: none;
-    }
+#article-div {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: solid;
+    border-radius: 5%;
+}
+
+h1 {
+    font-size: 40px;
+}

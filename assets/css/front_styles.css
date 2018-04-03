@@ -1,6 +1,7 @@
 /* Style the video: 100% width and height to cover the entire window */
 body, html {
   min-height: 100vh;
+  font-family: 'Fira Sans', sans-serif,;
 
 }
 
