@@ -82,38 +82,18 @@ $(document.body).on("click", ".checkbox", function () {
 //MOTIVATIONAL QUOTES
 
 //create array of quotes and then randomize the selection to be displayed
-
-function shuffle(quotes) {
-  var currentIndex = quotes.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    var randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = quotes[currentIndex];
-    quotes[currentIndex] = quotes[randomIndex];
-    quotes[randomIndex] = temporaryValue;
-
-    var formQuote = $("<p>");
-  }
-
-  return quotes;
-}
-
 var quotes = ["Life is the first gift, love is the second, and understanding is the third. ~ Unknown", "All you need in this life is ignorance and confidence. Then success is sure. ~ Mark Twain", "Difficulties are things that show a person who they are. ~ Epictetus",
   "Never throughout history has a man who lived a life of ease left a name worth remembering. ~ Theodore Roosevelt", "The smallest change in perspective can transform a life. What tiny attitude adjustment might turn your world around? ~ Oprah Winfrey",
-"Don't wait for your feelings to change before you take action. Take the action and your feelings will change.” ~ Barbara Baron", "Knowing is not enough, we must apply; willing is not enough, we must do. ~ Bruce Lee", "The most important thing is transforming our minds, for a new way of thinking, a new outlook: we should strive to develop a new inner world. ~ Dalai Lama", "Forgive others, not because they deserve forgiveness but because you deserve peace. ~ Jonathan Lockwood Huie", "Self-discipline begins with the mastery of your thoughts. If you don't control what you think, you can't control what you do. Simply, self-discipline enables you to think first and act afterward. ~ Napoleon Hill", "With self-discipline most anything is possible. ~ Theodore Roosevelt", "Why is it that people in the industrialized world tend to label as primitive those cultures that teach that man and nature are inseparable, when indeed this is the case? ~ Charlie Badenhop", "Unless you try to do something beyond what you have already mastered, you will never grow. ~ Ralph Waldo Emerson", "Motivation is a fire from within. If someone else tries to light that fire under you, chances are it will burn very briefly. ~ Stephen R. Covey", "“Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. ~ Thomas A. Edison", "“In order to attract more of the blessings that life has to offer, you must truly appreciate what you already have. ~ Ralph Marston",];
+  "Don't wait for your feelings to change before you take action. Take the action and your feelings will change.” ~ Barbara Baron", "Knowing is not enough, we must apply; willing is not enough, we must do. ~ Bruce Lee", "The most important thing is transforming our minds, for a new way of thinking, a new outlook: we should strive to develop a new inner world. ~ Dalai Lama", "Forgive others, not because they deserve forgiveness but because you deserve peace. ~ Jonathan Lockwood Huie", "Self-discipline begins with the mastery of your thoughts. If you don't control what you think, you can't control what you do. Simply, self-discipline enables you to think first and act afterward. ~ Napoleon Hill", "With self-discipline most anything is possible. ~ Theodore Roosevelt", "Why is it that people in the industrialized world tend to label as primitive those cultures that teach that man and nature are inseparable, when indeed this is the case? ~ Charlie Badenhop", "Unless you try to do something beyond what you have already mastered, you will never grow. ~ Ralph Waldo Emerson", "Motivation is a fire from within. If someone else tries to light that fire under you, chances are it will burn very briefly. ~ Stephen R. Covey", "“Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. ~ Thomas A. Edison", "“In order to attract more of the blessings that life has to offer, you must truly appreciate what you already have. ~ Ralph Marston",];
 
-var randomQuote = shuffle(quotes);
 
-console.log(randomQuote);
+// Pick a remaining element...
+var randomIndex = Math.floor(Math.random() * quotes.length);
+console.log(quotes[randomIndex]);
+
 
 //assign randomquote to div
 
-$("#quotesMiddle").text(randomQuote);
+$("#quotesMiddle").text(quotes[randomIndex]);
 
 
