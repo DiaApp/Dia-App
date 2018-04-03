@@ -3,7 +3,7 @@
 
 <head>
 
-   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,30 +12,52 @@
 
 
     <link rel="icon" type="image/png" href="assets/images/Dia-favi.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/productivity.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top teal lighten-2">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <p class="navbar-text">Dia</p>
-            </div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo dia-head-logo">
+                <img src="assets/images/Dia-logo1.png" alt="Dia Logo">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="relax_page.html" class="waves-effect waves-light btn">Relax
+                        <i class="material-icons right">battery_charging_full</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="get_woke_page.html" class="waves-effect waves-light btn">Woke
+                        <i class="material-icons right">cloud</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="productivity_page.html" class="waves-effect waves-light btn">Productivity
+                        <i class="material-icons right">assignment</i>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav> 
-
-    <div id="video-overlay"><video autoplay muted loop id="myVideo">
+    </nav>
+    <br>
+    <div id="video-overlay">
+        <video autoplay muted loop id="myVideo">
             <source src="assets/images/Productivity-Ocean-Flow.mp4" type="video/mp4">
-    </video>
-</div>
-    
-    
-    
+        </video>
+    </div>
+
+
+
     <br>
     <br>
     <br>
@@ -56,17 +78,9 @@
 
             <div id="quotesMiddle" class="col-md-4">
                 <!-- This content will take up 4/12 (or 1/3) of the container -->
-                
+
             </div>
-            <div id="floatRight" class="col-md-4">
-                <!-- This content will take up 4/12 (or 1/3) of the container -->
-                <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum</p>
-            </div>
+
 
         </div>
 
@@ -76,8 +90,8 @@
     API we can use would be NYT/Twitter/Sports/TechNews. It will have 3 divs within the container. Each div is 
 different  -->
 
-<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-<script src="assets/javascript/productivity.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="assets/javascript/productivity.js"></script>
 </body>
 
 </html>
