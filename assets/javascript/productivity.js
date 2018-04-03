@@ -97,6 +97,8 @@ function shuffle(quotes) {
     temporaryValue = quotes[currentIndex];
     quotes[currentIndex] = quotes[randomIndex];
     quotes[randomIndex] = temporaryValue;
+
+    var formQuote = $("<p>");
   }
 
   return quotes;
