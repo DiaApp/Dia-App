@@ -111,3 +111,9 @@ var quotes = ["Life is the first gift, love is the second, and understanding is 
 var randomQuote = shuffle(quotes);
 
 console.log(randomQuote);
+
+//assign randomquote to div
+
+$("#quotesMiddle").text(randomQuote);
+
+
