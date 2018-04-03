@@ -1,9 +1,18 @@
 
 .nav-wrapper {
-    text-align: center;
     z-index: 10;
     font-family: 'Chicle', cursive;
+    
 }
+
+.brand-logo {
+    z-index: 7;
+  }
+  
+.brand-logo img {
+    width: 111px;
+    height: auto;
+  }
 
 #search {
     z-index: 10;
@@ -60,6 +69,6 @@ footer {
 }
 
 img {
-    border: solid;
-    border-radius: 50%;
+    height: auto;
+    width: 300px;
 }

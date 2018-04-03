@@ -1,10 +1,20 @@
 var searchTerm1;
 var numberRecords = 5;
 
+//if the search-topic is in local storage 
+if(localStorage.getItem("search-topic")){
+    $(".show-this").css("display", "none");
+    $(".hide-this").css("display", "block");
+    firstTopic();
+    topHeadlines();
+}
+// do the search and set the data
+
+
 $("body").on("click", "#submit-button", function (event) {
     event.preventDefault();
-    $(".show").css("display", "none");
-    $(".hide").css("display", "block");
+    $(".show-this").css("display", "none");
+    $(".hide-this").css("display", "block");
     var topic = $("#search-term").val();
     localStorage.clear();
     localStorage.setItem("search-topic", topic);
@@ -31,7 +41,7 @@ function firstTopic() {
             var pubDate = articles[j].pub_date;
 
             var articleDiv = $("<div>");
-
+            articleDiv.attr("id", "article-div");
             var number = $("<div>" + (j + 1) + "</div>");
             articleDiv.append(number);
 
