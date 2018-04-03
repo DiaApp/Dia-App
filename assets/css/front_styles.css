@@ -36,7 +36,7 @@
 }
 
 .clock {
-   
+   /*clock*/
     text-align: center;
     color: white;
     padding-bottom: 10px;
@@ -51,7 +51,7 @@
 }
 
 #time {
-    font-size: 70px;
+    font-size: 110px;
 }
 
 #date {
