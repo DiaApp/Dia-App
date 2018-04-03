@@ -9,6 +9,7 @@
 }
 
 #video-overlay {
+    clear: both;
     width: 100%;
     height: 100vh;
 }
@@ -19,15 +20,17 @@ body, html {
   
   }
 
-#floatLeft {
-    
+#goalsLeft {
+    float: left;
+    width: 45%;
     background-color: white;
     height: 300px;
     
 }
 
-#floatRight {
-
+#quotesMiddle {
+    float: right;
+    width: 45%;
     background-color: white;
     height: 300px;
     
@@ -46,7 +49,16 @@ body, html {
         clear: both;
     }
 
-    .navbar {
-
-        text-align: center;
+    nav {
+        position: absolute;
+        top: 0%;
     }
+
+    .brand-logo {
+        z-index: 7;
+      }
+      
+      .brand-logo img {
+        width: 111px;
+        height: auto;
+      }
