@@ -66,8 +66,3 @@ $("#myForm").hide();
 }); 
 
 $("#name-display").text(localStorage.getItem("name"));
-
-
-// function myFunction() {
-// document.getElementById("myForm").reset();
-// };
