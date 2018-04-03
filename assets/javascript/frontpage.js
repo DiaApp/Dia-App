@@ -53,4 +53,21 @@ centerClock();
 $("form").on("submit", function() {
   event.preventDefault();
   console.log("hi");
+
+// Captures user input
+var name = $("#name-input").val().trim();
+console.log(name);
+// Display the name
+$("#name-display").text(name);
+
+localStorage.setItem("name", name);
+
+$("#myForm").hide();
 }); 
+
+$("#name-display").text(localStorage.getItem("name"));
+
+
+// function myFunction() {
+// document.getElementById("myForm").reset();
+// };
