@@ -1,16 +1,3 @@
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyAEpQOWrA8NdAQDn_tAds4GdBVw0F7HKsQ",
-  authDomain: "dia-app-4218.firebaseapp.com",
-  databaseURL: "https://dia-app-4218.firebaseio.com",
-  projectId: "dia-app-4218",
-  storageBucket: "",
-  messagingSenderId: "292332669604"
-};
-firebase.initializeApp(config);
-
-var database = firebase.database();
-
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -66,8 +53,3 @@ $("#myForm").hide();
 }); 
 
 $("#name-display").text(localStorage.getItem("name"));
-
-
-// function myFunction() {
-// document.getElementById("myForm").reset();
-// };

@@ -51,6 +51,12 @@ body {
     flex-direction: column;
 }
 
+html {
+    min-height: 100vh;
+    font-family: 'Fira Sans', sans-serif,;
+  
+  }
+
 main {
     flex: 1 0 auto;
 }

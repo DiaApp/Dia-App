@@ -1,3 +1,9 @@
+body, html {
+    min-height: 100vh;
+    font-family: 'Fira Sans', sans-serif,;
+  
+  }
+
 #floatLeft {
     clear: both;
     float:left; 
