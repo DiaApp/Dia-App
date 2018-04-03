@@ -15,15 +15,7 @@ float: right;
     padding: 0px 0px;
     overflow: auto;
 }
-#bottomLeft {
-    float: left;
-        background-color: white;
-        height: auto;
-        width: 45%;
-        padding: 0px 30px;
-        overflow: auto;
-        
-    }
+
     .container {
         width: 100%;
     }
@@ -31,4 +23,7 @@ float: right;
     .navbar {
 
         text-align: center;
+    }
+    .hide {
+        display: none;
     }
