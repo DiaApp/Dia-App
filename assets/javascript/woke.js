@@ -1,8 +1,19 @@
-var searchTerm1 = "biology";
-var searchTerm2 = "tesla";
+var searchTerm1;
 var numberRecords = 5;
 
+$("body").on("click", "#submit-button", function (event) {
+    event.preventDefault();
+    $(".show").css("display", "none");
+    $(".hide").css("display", "block");
+    var topic = $("#search-term").val();
+    localStorage.clear();
+    localStorage.setItem("search-topic", topic);
+    firstTopic();
+    topHeadlines();
+})
+
 function firstTopic() {
+    searchTerm1 = localStorage.getItem("search-topic");
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     var apiKey = "bb134ec959784cc58e11ecfeb4e61900";
     url += '?' + "api-key=" + apiKey + "&q=" + searchTerm1 + "&fl=web_url, headline, byline, pub_date";
@@ -50,7 +61,8 @@ function firstTopic() {
         throw err;
     });
 }
-firstTopic();
+
+
 function topHeadlines() {
     var url = 'https://newsapi.org/v2/top-headlines?' +
         'country=us&' +
@@ -64,7 +76,7 @@ function topHeadlines() {
         for (var i = 0; i < 5; i++) {
             console.log(results[i].title);
             console.log(results[i].url);
-        
+
             var webUrl = results[i].url;
             var headline = results[i].title;
             if ('author' in results[i]) { var byLine = results[i].author; }
@@ -98,4 +110,3 @@ function topHeadlines() {
         }
     })
 }
-topHeadlines();
