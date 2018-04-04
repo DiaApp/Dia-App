@@ -52,4 +52,11 @@ localStorage.setItem("name", name);
 $("#myForm").hide();
 }); 
 
-$("#name-display").text(localStorage.getItem("name"));
+var userName = localStorage.getItem("name");
+if (userName) {
+    $("#myForm").hide();
+}
+
+$("#name-display").text(userName);
+
+

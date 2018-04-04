@@ -87,3 +87,9 @@ body, html {
   font-size: 18pt;
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    .clock {
+        color: red;
+    }
+}
