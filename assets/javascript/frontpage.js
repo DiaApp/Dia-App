@@ -1,3 +1,9 @@
+// mobile collapse 
+$(document).ready(function(){
+    $(".sidenav").sidenav();
+  });
+
+
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -58,5 +64,6 @@ if (userName) {
 }
 
 $("#name-display").text(userName);
+
 
 
