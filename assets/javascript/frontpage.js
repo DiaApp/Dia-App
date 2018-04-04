@@ -1,3 +1,9 @@
+// mobile collapse 
+$(document).ready(function(){
+    $(".sidenav").sidenav();
+  });
+
+
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -52,4 +58,12 @@ localStorage.setItem("name", name);
 $("#myForm").hide();
 }); 
 
-$("#name-display").text(localStorage.getItem("name"));
+var userName = localStorage.getItem("name");
+if (userName) {
+    $("#myForm").hide();
+}
+
+$("#name-display").text(userName);
+
+
+

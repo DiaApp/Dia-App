@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dia | HOME</title>
+  <title>Día | HOME</title>
 
 
   <!-- Compiled and minified CSS -->
@@ -37,6 +37,8 @@
       <a href="index.html" class="brand-logo">
         <img src="assets/images/Dia-logo1.png" alt="Dia Logo">
       </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i>
+      </a>
       <ul class="right hide-on-med-and-down">
         <li>
           <a href="relax_page.html" class="waves-effect waves-light btn">Relax
@@ -56,10 +58,26 @@
       </ul>
     </div>
   </nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li>
+    <a href="relax_page.html" class="waves-effect waves-light btn">Relax
+    </a>
+  </li>
+  <li>
+    <a href="get_woke_page.html" class="waves-effect waves-light btn">Woke
+    </a>
+  </li>
+  <li>
+    <a href="productivity_page.html" class="waves-effect waves-light btn">Productivity
+    </a>
+  </li>
+</ul>
+
   <div class="clock">
     <h1 id="time"></h1>
     <h2 id="date"></h2>
-    <h2 id="message">Welcome, <span id="name-display"></span>
+    <h2 id="message">Welcome to Día, <span id="name-display"></span>
       <form id="myForm">
         <input id="name-input" type="text" placeholder="John Snow">
         <input id="subBtn"type="submit">
