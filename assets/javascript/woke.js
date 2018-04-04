@@ -2,19 +2,19 @@ var searchTerm1;
 var numberRecords = 5;
 
 //if the search-topic is in local storage 
-if(localStorage.getItem("search-topic")){
-    $(".show-this").css("display", "none");
-    $(".hide-this").css("display", "block");
-    firstTopic();
-    topHeadlines();
-}
+// if(localStorage.getItem("search-topic")){
+//     $(".show-this").css("display", "none");
+//     $(".hide-this").css("display", "block");
+//     firstTopic();
+//     topHeadlines();
+// }
 // do the search and set the data
 
 
 $("body").on("click", "#submit-button", function (event) {
     event.preventDefault();
-    $(".show-this").css("display", "none");
-    $(".hide-this").css("display", "block");
+    // $(".show-this").css("display", "none");
+    // $(".hide-this").css("display", "block");
     var topic = $("#search-term").val();
     localStorage.clear();
     localStorage.setItem("search-topic", topic);
@@ -24,6 +24,7 @@ $("body").on("click", "#submit-button", function (event) {
 
 function firstTopic() {
     searchTerm1 = localStorage.getItem("search-topic");
+    $("#user-topic").text(searchTerm1);
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     var apiKey = "bb134ec959784cc58e11ecfeb4e61900";
     url += '?' + "api-key=" + apiKey + "&q=" + searchTerm1 + "&fl=web_url, headline, byline, pub_date";
@@ -42,8 +43,8 @@ function firstTopic() {
 
             var articleDiv = $("<div>");
             articleDiv.attr("id", "article-div");
-            var number = $("<div>" + (j + 1) + "</div>");
-            articleDiv.append(number);
+            //var number = $("<div>" + (j + 1) + "</div>");
+            //articleDiv.append(number);
 
             var title = $("<h1>");
             title.text(headline);
@@ -64,7 +65,7 @@ function firstTopic() {
             link.attr("href", webUrl);
             articleDiv.append(link);
 
-            $("#topic0").append(articleDiv);
+            $("#topic0").prepend(articleDiv);
         }
 
     }).fail(function (err) {
@@ -74,6 +75,7 @@ function firstTopic() {
 
 
 function topHeadlines() {
+    $("#headlines").text("Top Headlines");
     var url = 'https://newsapi.org/v2/top-headlines?' +
         'country=us&' +
         'apiKey=16b956cb8a71458390753d016979fc83';
@@ -93,9 +95,10 @@ function topHeadlines() {
             var pubDate = results[i].publishedAt;
 
             var articleDiv = $("<div>");
+            articleDiv.attr("id", "article-div");
 
-            var number = $("<div>" + (i + 1) + "</div>");
-            articleDiv.append(number);
+            //var number = $("<div>" + (i + 1) + "</div>");
+            //articleDiv.append(number);
 
             var title = $("<h1>");
             title.text(headline);

@@ -24,7 +24,7 @@ $("#submit-input").on("click", function (event) {
             gifHolder.attr("data-still", stillUrl);
             gifHolder.attr("data-state", "still");
             gifDiv.prepend(gifHolder);
-            gifDiv.prepend("<div class='title-rating panel panel-default'> <strong>Title: </strong>" + gifTitle + "  <strong>Rating: </strong>" + gifRating + "</div>");
+            //gifDiv.prepend("<div class='title-rating panel panel-default'> <strong>Title: </strong>" + gifTitle + "</div>");
             //gifDiv.append("<button class='btn btn-default download' id='download'><a href=" + animateUrl + " target='blank' download>Download GIF</button");
             $("#gifs").prepend(gifDiv);
         }
